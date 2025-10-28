@@ -1,20 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "stripped_log_crafting",
-  "pattern": [
-    " L ",
-    " A ",
-    "   "
-  ],
-  "key": {
-    "L": {
+  "ingredients": [
+    {
       "item": "minecraft:oak_log"
     },
-    "A": {
-      "tag": "minecraft:axes"
+    {
+      "tag": "stripped-log-craft-recipe:axes"
     }
-  },
+  ],
   "result": {
-    "item": "minecraft:stripped_oak_log"
+    "item": "minecraft:stripped_oak_log",
+    "count": 1
   }
 }
