@@ -1,7 +1,10 @@
 {
   "pack": {
     "description": "Stripped Log Craft Recipe data",
-    "min_format": 88,
-    "max_format": 88
+    "pack_format": 88,
+    "supported_formats": {
+      "min_inclusive": 88,
+      "max_inclusive": 88
+    }
   }
 }
