@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " W ",
+        "   "
+    ],
+    "key": {
+        "#": "minecraft:oak_log",
+        "W": "minecraft:wooden_axe"
+    },
+    "result": {
+        "id": "minecraft:stripped_oak_log",
+        "count": 1
+    }
+}
