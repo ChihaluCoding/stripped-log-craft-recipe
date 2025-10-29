@@ -5,12 +5,8 @@
 	"name": "Stripped Log Craft Recipe",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"chihalu"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
 	"license": "CC0-1.0",
 	"icon": "assets/stripped-log-craft-recipe/icon.png",
 	"environment": "*",
@@ -38,7 +34,7 @@
 		"java": ">=21",
 		"fabric-api": "*"
 	},
-        "suggests": {
-                "another-mod": "*"
-        }
+	"suggests": {
+		"another-mod": "*"
+	}
 }
