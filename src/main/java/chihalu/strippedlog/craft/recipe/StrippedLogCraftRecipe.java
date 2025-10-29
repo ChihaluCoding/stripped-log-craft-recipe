@@ -2,8 +2,14 @@ package chihalu.strippedlog.craft.recipe;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import chihalu.strippedlog.craft.recipe.recipe.AxeStrippingRecipe;
 
 public class StrippedLogCraftRecipe implements ModInitializer {
 	public static final String MOD_ID = "stripped-log-craft-recipe";
@@ -19,6 +25,12 @@ public class StrippedLogCraftRecipe implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
-	}
+                Registry.register(Registries.RECIPE_SERIALIZER, id("axe_stripping"), AxeStrippingRecipe.SERIALIZER);
+
+                LOGGER.info("Registered axe stripping crafting recipe serializer");
+        }
+
+        private Identifier id(String path) {
+                return Identifier.of(MOD_ID, path);
+        }
 }

@@ -1,12 +1,20 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_warped_stem": {
+    "has_strippable_log": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
+            "tag": "minecraft:logs"
+          },
+          {
             "items": [
+              "minecraft:cherry_log",
+              "minecraft:pale_oak_log",
+              "minecraft:mangrove_log",
+              "minecraft:bamboo_block",
+              "minecraft:crimson_stem",
               "minecraft:warped_stem"
             ]
           }
@@ -16,19 +24,19 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "stripped-log-craft-recipe:stripped_warped_stem"
+        "recipe": "stripped-log-craft-recipe:axe_stripping"
       }
     }
   },
   "requirements": [
     [
-      "has_warped_stem",
+      "has_strippable_log",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "stripped-log-craft-recipe:stripped_warped_stem"
+      "stripped-log-craft-recipe:axe_stripping"
     ]
   }
 }
