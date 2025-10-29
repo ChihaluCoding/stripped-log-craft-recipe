@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "stripped_log_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_log"
+    },
+    {
+      "tag": "stripped-log-craft-recipe:axes"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stripped_acacia_log",
+    "count": 1
+  }
+}
